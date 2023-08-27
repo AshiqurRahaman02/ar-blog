@@ -1405,3 +1405,42 @@ body.nav-active {
 		padding-inline: 120px;
 	}
 }
+
+
+/* blog */
+
+#hashtags{
+	display: flex;
+}
+
+#title{
+	font-size: 60px;
+}
+
+#read-time{
+	margin-bottom: 15px;
+}
+
+#card{
+	display: flex;
+	justify-content: space-between;
+}
+
+.blog-card{
+	display: flex;
+}
+
+.blog-card>p{
+	border: 1px solid var(--text-wild-blue-yonder);
+	height: max-content;
+	padding: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+#like-icon,#share-icon{
+	position: relative;
+	top: 5px;
+	width: 20px;
+	height: 20px;
+}
