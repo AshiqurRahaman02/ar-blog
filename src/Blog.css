@@ -1,0 +1,142 @@
+/* blog */
+
+#hashtags {
+	display: flex;
+}
+
+#title {
+	font-size: 60px;
+}
+
+#read-time {
+	margin-bottom: 15px;
+}
+
+#card {
+	display: flex;
+	justify-content: space-between;
+}
+
+.blog-card {
+	display: flex;
+}
+
+.blog-card > p {
+	border: 1px solid var(--text-wild-blue-yonder);
+	height: max-content;
+	padding: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+#like-icon,
+#share-icon {
+	position: relative;
+	top: 5px;
+	width: 20px;
+	height: 20px;
+}
+
+#model {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5px;
+	width: 350px;
+	height: 210px;
+	border: 1px solid var(--text-wild-blue-yonder);
+	background-color: rgba(0, 0, 0, 0.315);
+	backdrop-filter: blur(10px);
+}
+#shareTop {
+	display: flex;
+	justify-content: space-between;
+}
+#cancel-icon {
+	cursor: pointer;
+	position: relative;
+	top: -20px;
+	left: 20px;
+	width: 30px;
+	height: 30px;
+}
+#link {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+#link > input {
+	padding: 3px;
+	outline: 1px solid var(--text-wild-blue-yonder);
+	width: 237px;
+	color: beige;
+	border-radius: 5px;
+}
+
+#platforms {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+#platforms > div {
+	position: relative;
+	text-align: center;
+}
+#platforms:hover > div:not(:hover) {
+	opacity: 0.5;
+}
+#platforms img {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+
+	display: flex;
+
+	align-items: center;
+	transition: 0.5s;
+}
+#platforms img:hover {
+	transform: scale(1.05);
+}
+
+#platforms span {
+	display: none;
+	position: absolute;
+	top: 55px;
+	left: -10px;
+	padding: 2px;
+	border: 1px dashed var(--text-wild-blue-yonder);
+}
+#platforms img:hover ~ span {
+	display: block;
+}
+
+#blogImage {
+	width: 100%;
+	margin-top: 50px;
+}
+
+#textContent {
+	width: 1000px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+#list > li {
+	list-style: decimal;
+	margin: 10px 0px 0px 15px;
+}
+
+#heading {
+	margin-top: 40px;
+	font-size: 40px;
+}
+#content {
+	margin-top: 20px;
+	/* font-size: 18px; */
+}
+
+#list {
+	margin-top: 20px;
+}
