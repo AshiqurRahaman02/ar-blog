@@ -11,14 +11,14 @@ import Fackbook from "../assets/images/facebook.svg";
 import Twitter from "../assets/images/twitter.svg";
 import Linkedin from "../assets/images/linkedin.svg";
 
-interface Fun {
+interface Arguments {
 	onClose: () => void;
 	handelCopyLink: () => void;
 	handleError: () => void;
 	url: string;
 }
 
-function ShareModel({ onClose, url, handelCopyLink, handleError }: Fun) {
+function ShareModel({ onClose, url, handelCopyLink, handleError }: Arguments) {
 	return (
 		<div id="model">
 			<div>

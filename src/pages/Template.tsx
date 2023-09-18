@@ -12,6 +12,7 @@ import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import ShareModel from "../component/ShareModel";
 
 import "../Blog.css";
+import RelatedPost from "../component/RelatedPost";
 
 // for practice purposes
 
@@ -19,6 +20,7 @@ function Template() {
 	const [isLiked, setIsLiked] = useState(false);
 	const [isShare, setIsShare] = useState(false);
 	const url = window.location.href;
+	const [tag, setTag] = useState("AI");
 
 	const handelLike = () => {
 		setIsLiked(true);
@@ -285,6 +287,7 @@ function Template() {
 					</p>
 				</article>
 			</main>
+			<RelatedPost tag={tag}/>
 		</div>
 	);
 }
