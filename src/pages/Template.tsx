@@ -13,6 +13,7 @@ import ShareModel from "../component/ShareModel";
 
 import "../Blog.css";
 import RelatedPost from "../component/RelatedPost";
+import Comment from "../component/Comment";
 
 // for practice purposes
 
@@ -117,7 +118,7 @@ function Template() {
 					<span>#safety </span> &nbsp;&nbsp; <span> #security</span>
 				</p>
 
-				<h1 id="title">
+				<h1 id="title" >
 					Google's AI Red Team: the ethical hackers making AI safer
 				</h1>
 
@@ -287,7 +288,16 @@ function Template() {
 					</p>
 				</article>
 			</main>
-			<RelatedPost tag={tag}/>
+			<section
+				className="section recent-post"
+				id="recent"
+				aria-labelledby="recent-label"
+			>
+				<div className="container">
+					<Comment />
+					<RelatedPost tag={tag} />
+				</div>
+			</section>
 		</div>
 	);
 }
