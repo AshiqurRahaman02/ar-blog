@@ -9,7 +9,7 @@ function RelatedPost({ tag }: Arguments) {
 	return (
 		<div className="card aside-card">
 			<h3 className="headline headline-2 aside-title">
-				<span className="span">Popular Posts</span>
+				<span className="span">Related Posts</span>
 			</h3>
 			<ul className="popular-list">
 				<li>
